@@ -1,0 +1,45 @@
+{
+  "name": "@tubrody/ah-urgegas-users-plugin",
+  "version": "1.0.27",
+  "description": "ActionHero plugin that contributes users, roles and permissions",
+  "keywords": [
+    "users",
+    "roles"
+  ],
+  "main": "index.js",
+  "homepage": "www.kwantec.com",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "dependencies": {
+    "@sendgrid/mail": "^7.0.0",
+    "actionhero": "^20.0.0",
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^1.17.0",
+    "crypto": "^1.0.1",
+    "dotenv": "^8.2.0",
+    "env-cmd": "^10.0.1",
+    "fakeredis": "^2.0.0",
+    "ioredis": "^4.14.1",
+    "jest": "^24.9.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.7.7",
+    "mongoose-lean-virtuals": "^0.5.0",
+    "mongoose-paginate-v2": "^1.3.6",
+    "nodemailer": "^6.3.1",
+    "nodemailer-sendgrid-transport": "^0.2.0",
+    "password-generator": "^2.2.3",
+    "randomstring": "^1.1.5",
+    "standard": "^14.3.1",
+    "validator": "^12.0.0",
+    "ws": "^7.2.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "scripts": {
+    "start": "npx actionhero start",
+    "test": "npx jest --testTimeout=10000",
+    "load": "./bin/load.sh",
+    "set-env": "./bin/keys.sh",
+    "generate-docs": "jsdoc -c ./bin/docs.json -r README.md -d ./public/doc"
+  }
+}

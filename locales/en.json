@@ -1,0 +1,14 @@
+{
+	"actionhero": {
+		"errors": {
+			"connectionRoomExists": "actionhero.errors.connectionRoomExists",
+			"missingParams": "Missing required parameters",
+			"fileNotProvided": "actionhero.errors.fileNotProvided",
+			"fileNotFound": "actionhero.errors.fileNotFound",
+			"unknownAction": "actionhero.errors.unknownAction",
+			"serverShuttingDown": "actionhero.errors.serverShuttingDown"
+		},
+		"welcomeMessage": "actionhero.welcomeMessage"
+	},
+	"Node Healthy": "Node Healthy"
+}
