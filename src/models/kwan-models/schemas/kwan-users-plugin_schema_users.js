@@ -30,8 +30,20 @@ const userSchema = new Schema({
         type: String
       }
     }
-  ]
-});
+  ],
+// 👉 Campos adicionales que quieres permitir
+  company: { type: String, default: "" },
+  jobTitle: { type: String, default: "" },
+  mobileID: { type: String, default: "" },
+  type: { type: String, default: "user" },
+  changePassword: { type: String, default: "false" },
+  valid: { type: String, default: "false" },
+  lock: { type: Boolean, default: false },
+  dateLock: { type: Date, default: Date.now },
+  zipCode: { type: Number }, // si lo necesitas como requerido puedes poner: { type: Number, required: true }
+  ownerScope: { type: String },
+  source: { type: String }
+}, { timestamps: true }); 
 
 userSchema.virtual("fullName").get(function() {
   return this.firstName + " " + this.lastName;
